@@ -15,7 +15,7 @@ def main():
     )
 
     for i, batch_tokens in enumerate(
-        model.stream(batch_prompt_text=["All your base", "import asyncio"])
+        model.stream(batch_prompt_text=["All your base", "import asyncio", "How are you chameleon?"])
     ):
         print(model.decode_text(batch_tokens.id.view(-1, 1)))
 
