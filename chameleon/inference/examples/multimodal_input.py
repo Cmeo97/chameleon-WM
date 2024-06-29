@@ -16,7 +16,7 @@ def main():
 
     tokens = model.generate(
         prompt_ui=[
-            {"type": "image", "value": "file:/space2/cristianmeo/chameleon-WM/openvla_model.png"},
+            {"type": "image", "value": "file:/space2/cristianmeo/chameleon-WM/image.png"},
             {"type": "text", "value": "What do you see?"},
             {"type": "sentinel", "value": "<END-OF-TURN>"},
         ]
